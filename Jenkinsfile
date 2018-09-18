@@ -43,6 +43,6 @@ pipeline {
 	       }
                
          }
+        bat 'echo aditi'
     }
-   bat 'echo aditi'
 }
