@@ -4,7 +4,7 @@ pipeline {
          stage("one"){
 	     steps{
 	     
-	      bat "Hi i am compiling"
+	      sh "Hi i am compiling"
              }	
 	  }	 	
          stage("Two"){
@@ -20,7 +20,7 @@ pipeline {
 		       }
 		 }
                  steps{
-	             bat "Hello condition is false"
+	             sh "Hello condition is false"
 	         }
       
          }
@@ -29,23 +29,23 @@ pipeline {
 	         stage("innerFour1"){	
 	      
                      steps{
-	                 bat "I am inner four1 stage "
+	                 sh "I am inner four1 stage "
 	             }
       
                  }
 		 stage("innerFour2"){	
 	      
                      steps{
-	                 bat "I am inner four2 stage "
+	                 sh "I am inner four2 stage "
 	             }
       
                  }
 	       }
                steps{
-	            bat "I am outer four stage "
+	            sh "I am outer four stage "
 	       }
       
          }
     }
-   bat 'aditi'
+   bat 'echo aditi'
 }
