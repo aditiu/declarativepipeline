@@ -4,7 +4,7 @@ pipeline {
          stage("one"){
 	     steps{
 	     
-	      sh "Hi i am compiling"
+	      bat "Hi i am compiling"
              }	
 	  }	 	
          stage("Two"){
